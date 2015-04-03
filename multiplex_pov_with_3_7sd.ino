@@ -156,12 +156,11 @@ void display_value(int v) {
 
 
 void loop() {
-  unsigned long tempo;
-  
+	
   int tpot = analogRead(pin_pot);
   pausa = analogRead(pin_tempo) + 1;
 
   if (tpot > 999) tpot=999;
-  display_value'(tpot);
+  display_value(tpot);
 
 }
